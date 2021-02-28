@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="AppointmentTableViewCell" customModule="IDEHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MA3-f5-c3b">
+                        <rect key="frame" x="344" y="17" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MA3-f5-c3b" secondAttribute="height" multiplier="1:1" id="vPs-lH-MZg"/>
+                        </constraints>
+                        <state key="normal" image="cancelbutton"/>
+                        <connections>
+                            <action selector="cancelButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="38s-GD-Qah"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="jfY-F7-39y" customClass="CircularImageView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="24" y="19" width="62" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jfY-F7-39y" secondAttribute="height" multiplier="1:1" id="DEy-2R-B6Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64T-wA-Pjb" customClass="CommonUILabel" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="101" y="16" width="130.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVu-lt-rvs" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="101" y="35" width="77" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="14.300000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="fill star"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="empty stars"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Da-e5-Toy" customClass="CommonUILabel" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="101" y="62.5" width="272" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="UiU-9w-sic">
+                        <rect key="frame" x="101" y="86.5" width="12" height="14.5"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyV-vE-Opl">
+                        <rect key="frame" x="118" y="91" width="89" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="View on map">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="locationButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GWV-Ky-axN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-Dw-9pD" customClass="CommonUILabel" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="101" y="127" width="55.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-gs-lrC" customClass="CommonUILabel" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="101" y="106" width="225.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="top" secondItem="9Ne-gs-lrC" secondAttribute="bottom" constant="5" id="1GU-5i-0sA"/>
+                    <constraint firstItem="jfY-F7-39y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="1R1-Zh-CQd"/>
+                    <constraint firstItem="64T-wA-Pjb" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0641509" id="6f4-La-aVU"/>
+                    <constraint firstItem="UiU-9w-sic" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.0293333" id="746-0h-Qab"/>
+                    <constraint firstItem="5Da-e5-Toy" firstAttribute="top" secondItem="NVu-lt-rvs" secondAttribute="bottom" constant="15.699999999999999" id="8Gh-Ah-i0G"/>
+                    <constraint firstItem="jfY-F7-39y" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="76:265" id="9f9-9b-Xgp"/>
+                    <constraint firstItem="tyV-vE-Opl" firstAttribute="leading" secondItem="UiU-9w-sic" secondAttribute="trailing" constant="5" id="BH4-du-VAa"/>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="81" id="Cdj-hA-u2K"/>
+                    <constraint firstItem="5Da-e5-Toy" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.677333" id="Dka-sa-c8z"/>
+                    <constraint firstItem="jfY-F7-39y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="E9t-42-wtt"/>
+                    <constraint firstItem="tyV-vE-Opl" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0737327" id="HAo-Mo-R2t"/>
+                    <constraint firstItem="9Ne-gs-lrC" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0737327" id="HPY-UJ-PzB"/>
+                    <constraint firstItem="tyV-vE-Opl" firstAttribute="centerY" secondItem="UiU-9w-sic" secondAttribute="centerY" constant="5.25" id="JmS-VW-w2u"/>
+                    <constraint firstItem="64T-wA-Pjb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.325333" id="KTM-6J-RLi"/>
+                    <constraint firstItem="MA3-f5-c3b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="L4O-fe-4PA"/>
+                    <constraint firstItem="NVu-lt-rvs" firstAttribute="leading" secondItem="jfY-F7-39y" secondAttribute="trailing" constant="15" id="P7e-K4-WgR"/>
+                    <constraint firstItem="NVu-lt-rvs" firstAttribute="top" secondItem="64T-wA-Pjb" secondAttribute="bottom" constant="5" id="USB-MQ-GBV"/>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0737327" id="V2i-OJ-h3s"/>
+                    <constraint firstItem="UiU-9w-sic" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0668203" id="WE2-e1-Nfx"/>
+                    <constraint firstAttribute="trailing" secondItem="MA3-f5-c3b" secondAttribute="trailing" constant="24" id="Yb1-41-9EM"/>
+                    <constraint firstItem="64T-wA-Pjb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="aaS-zx-fiS"/>
+                    <constraint firstItem="UiU-9w-sic" firstAttribute="top" secondItem="5Da-e5-Toy" secondAttribute="bottom" constant="6" id="alS-no-0yn"/>
+                    <constraint firstItem="5Da-e5-Toy" firstAttribute="leading" secondItem="jfY-F7-39y" secondAttribute="trailing" constant="15" id="cxC-wU-c3u"/>
+                    <constraint firstItem="64T-wA-Pjb" firstAttribute="leading" secondItem="jfY-F7-39y" secondAttribute="trailing" constant="15" id="fbg-dA-hH8"/>
+                    <constraint firstItem="9Ne-gs-lrC" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.562667" id="jel-Hj-bjc"/>
+                    <constraint firstItem="9Ne-gs-lrC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="81" id="kru-wH-a2s"/>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="top" secondItem="tyV-vE-Opl" secondAttribute="bottom" constant="20" id="nkd-5O-kmp"/>
+                    <constraint firstItem="tyV-vE-Opl" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.222" id="oER-4n-6ka"/>
+                    <constraint firstItem="UiU-9w-sic" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="81" id="qDo-hP-RSg"/>
+                    <constraint firstItem="NVu-lt-rvs" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.054717" id="viF-Md-Ag1"/>
+                    <constraint firstItem="NVu-lt-rvs" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.192" id="wze-AH-lcl"/>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="top" secondItem="9Ne-gs-lrC" secondAttribute="bottom" constant="5" id="y3Z-NM-FZX"/>
+                    <constraint firstItem="9pI-Dw-9pD" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.138667" id="yyZ-hb-0Jb"/>
+                    <constraint firstItem="9Ne-gs-lrC" firstAttribute="top" secondItem="UiU-9w-sic" secondAttribute="bottom" constant="5" id="zdV-d8-qqe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="9Ne-gs-lrC" id="9I8-zH-Hcn"/>
+                <outlet property="descriptionLabel" destination="5Da-e5-Toy" id="7zV-94-vwx"/>
+                <outlet property="doctorImageView" destination="jfY-F7-39y" id="tMc-iF-ubF"/>
+                <outlet property="doctorNameLabel" destination="64T-wA-Pjb" id="v5Z-KU-ea9"/>
+                <outlet property="raitinView" destination="NVu-lt-rvs" id="aWN-zh-bFy"/>
+                <outlet property="timeLabel" destination="9pI-Dw-9pD" id="syY-ZW-i9v"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="12.388392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cancelbutton" width="33" height="33"/>
+        <image name="doctor" width="20.5" height="23"/>
+        <image name="empty stars" width="15" height="14.5"/>
+        <image name="fill star" width="15" height="14.5"/>
+        <image name="pin" width="24.5" height="32"/>
+    </resources>
+</document>

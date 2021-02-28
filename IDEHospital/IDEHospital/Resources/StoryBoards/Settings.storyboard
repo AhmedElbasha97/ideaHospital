@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SettingsVC-->
+        <scene sceneID="itB-dj-EDW">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jCA-Qd-Udw" customClass="SettingsVC" customModule="IDEHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="irQ-7L-RGR" customClass="SettingsView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-0u-OUv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mtg-0u-OUv" firstAttribute="centerX" secondItem="7Br-ne-B8T" secondAttribute="centerX" id="E0D-4b-T2U"/>
+                            <constraint firstItem="Mtg-0u-OUv" firstAttribute="height" secondItem="7Br-ne-B8T" secondAttribute="height" id="F15-WZ-cwb"/>
+                            <constraint firstItem="Mtg-0u-OUv" firstAttribute="width" secondItem="7Br-ne-B8T" secondAttribute="width" id="Kdl-9F-MQM"/>
+                            <constraint firstItem="Mtg-0u-OUv" firstAttribute="centerY" secondItem="7Br-ne-B8T" secondAttribute="centerY" id="Pnz-Z5-IMC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Br-ne-B8T"/>
+                        <connections>
+                            <outlet property="settingsTableView" destination="Mtg-0u-OUv" id="IeZ-oT-WsH"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="settingsView" destination="irQ-7L-RGR" id="enz-dd-vhT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Nj-nu-olv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1182" y="-19"/>
+        </scene>
+        <!--About Us And Terms And ConditionVC-->
+        <scene sceneID="qKL-BJ-mOK">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsAndTermsAndConditionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KCu-yJ-GGu" customClass="AboutUsAndTermsAndConditionVC" customModule="IDEHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLI-5E-xNi" customClass="AboutUsAndTermsAndConditionView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5a-bR-d26">
+                                <rect key="frame" x="27.5" y="85" width="359" height="736"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c5a-bR-d26" firstAttribute="centerY" secondItem="YqF-cH-Mdt" secondAttribute="centerY" id="3h6-oI-FnI"/>
+                            <constraint firstItem="c5a-bR-d26" firstAttribute="width" secondItem="YqF-cH-Mdt" secondAttribute="width" multiplier="325/375" id="fsf-3q-J9s"/>
+                            <constraint firstItem="c5a-bR-d26" firstAttribute="centerX" secondItem="YqF-cH-Mdt" secondAttribute="centerX" id="jXv-jh-rXf"/>
+                            <constraint firstItem="c5a-bR-d26" firstAttribute="height" secondItem="YqF-cH-Mdt" secondAttribute="height" multiplier="0.9" id="sJ5-gS-zA5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YqF-cH-Mdt"/>
+                        <connections>
+                            <outlet property="aboutUsAndTermsAndConditonTextView" destination="c5a-bR-d26" id="EVH-CM-JNa"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="aboutUsView" destination="XLI-5E-xNi" id="ZxI-ZY-ex9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rqC-tJ-bk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-19"/>
+        </scene>
+    </scenes>
+</document>

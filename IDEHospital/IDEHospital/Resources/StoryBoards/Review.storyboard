@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nAV-5W-XVH">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ReviewVC-->
+        <scene sceneID="Uli-qA-iRB">
+            <objects>
+                <viewController storyboardIdentifier="ReviewVC" id="nAV-5W-XVH" customClass="ReviewVC" customModule="IDEHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ihf-wt-Qq8" customClass="ReviewView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-eE-Gab">
+                                <rect key="frame" x="57.5" y="275" width="260" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="4nI-vg-7kt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cI-PN-D8i" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="57.5" y="300" width="77" height="14.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14.300000000000001" id="nyj-LX-X1f"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7gM-sp-KbE">
+                                <rect key="frame" x="57.5" y="322" width="275" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="ouD-qP-xoP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92I-NI-PBd">
+                                <rect key="frame" x="30" y="492" width="315" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hXd-iv-jWU"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="submitButton:" destination="nAV-5W-XVH" eventType="touchUpInside" id="2gy-EO-6un"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4cI-PN-D8i" firstAttribute="leading" secondItem="UKC-eE-Gab" secondAttribute="leading" id="F7K-7Y-wyy"/>
+                            <constraint firstItem="92I-NI-PBd" firstAttribute="centerX" secondItem="CaB-uc-jqW" secondAttribute="centerX" id="KPk-AH-j6Q"/>
+                            <constraint firstItem="4cI-PN-D8i" firstAttribute="top" secondItem="UKC-eE-Gab" secondAttribute="bottom" constant="8" id="SEl-JU-F9k"/>
+                            <constraint firstItem="UKC-eE-Gab" firstAttribute="centerX" secondItem="CaB-uc-jqW" secondAttribute="centerX" id="UZu-FR-dzo"/>
+                            <constraint firstItem="92I-NI-PBd" firstAttribute="width" secondItem="Ihf-wt-Qq8" secondAttribute="width" multiplier="315/375" id="VuM-ZV-OI9"/>
+                            <constraint firstItem="7gM-sp-KbE" firstAttribute="top" secondItem="4cI-PN-D8i" secondAttribute="bottom" constant="7.7000000000000002" id="XlM-oR-cs1"/>
+                            <constraint firstItem="7gM-sp-KbE" firstAttribute="width" secondItem="Ihf-wt-Qq8" secondAttribute="width" multiplier="275/375" id="aMk-nV-o3f"/>
+                            <constraint firstItem="UKC-eE-Gab" firstAttribute="width" secondItem="Ihf-wt-Qq8" secondAttribute="width" multiplier="260/375" id="d76-d5-IFz"/>
+                            <constraint firstItem="4cI-PN-D8i" firstAttribute="width" secondItem="Ihf-wt-Qq8" secondAttribute="width" multiplier="77/375" id="eZs-JQ-aol"/>
+                            <constraint firstItem="UKC-eE-Gab" firstAttribute="centerY" secondItem="CaB-uc-jqW" secondAttribute="centerY" multiplier="0.85" id="hhA-W7-lbf"/>
+                            <constraint firstItem="CaB-uc-jqW" firstAttribute="bottom" secondItem="92I-NI-PBd" secondAttribute="bottom" constant="130" id="hq6-aI-u7N"/>
+                            <constraint firstItem="7gM-sp-KbE" firstAttribute="leading" secondItem="4cI-PN-D8i" secondAttribute="leading" id="pk8-cC-q3Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CaB-uc-jqW"/>
+                        <connections>
+                            <outlet property="commentTextField" destination="7gM-sp-KbE" id="dpS-je-KCA"/>
+                            <outlet property="mainLabel" destination="UKC-eE-Gab" id="DYK-tT-PqW"/>
+                            <outlet property="starView" destination="4cI-PN-D8i" id="Urs-CI-sMB"/>
+                            <outlet property="submitButton" destination="92I-NI-PBd" id="mrY-7i-vm2"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="reviewView" destination="Ihf-wt-Qq8" id="Uzc-K0-d4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFS-4V-xnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="108"/>
+        </scene>
+    </scenes>
+</document>

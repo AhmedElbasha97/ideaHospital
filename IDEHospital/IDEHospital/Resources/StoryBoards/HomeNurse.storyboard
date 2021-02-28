@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7W-JC-jJG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home NurseVC-->
+        <scene sceneID="xJq-Ov-xWF">
+            <objects>
+                <viewController storyboardIdentifier="HomeNurseVC" id="f7W-JC-jJG" customClass="HomeNurseVC" customModule="IDEHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fw8-IA-XYh" customClass="HomeNurseView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAg-FT-om7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekY-yE-71J">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTU-rh-vVe">
+                                                <rect key="frame" x="29.5" y="56" width="355" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="sLc-rW-hMZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-To-lfg" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                                <rect key="frame" x="26" y="136" width="362" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="H19-6H-vhv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-bb-u34" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                                <rect key="frame" x="26" y="197" width="362" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjO-ee-kIe" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                                <rect key="frame" x="26" y="258" width="362" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G9H-rr-i3j">
+                                                <rect key="frame" x="26" y="317" width="362" height="119"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="119" id="nHa-JP-MxS"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iys-9p-5Hp">
+                                                <rect key="frame" x="102.5" y="98" width="207" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2Z-wM-pfy" customClass="CommonUIButton" customModule="IDEHospital" customModuleProvider="target">
+                                                <rect key="frame" x="33" y="453" width="348" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="hJk-JX-jPG"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="sendRequest:" destination="f7W-JC-jJG" eventType="touchUpInside" id="LZ2-ms-aPF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="G9H-rr-i3j" firstAttribute="top" secondItem="TjO-ee-kIe" secondAttribute="bottom" constant="23" id="26e-Go-zaX"/>
+                                            <constraint firstItem="TjO-ee-kIe" firstAttribute="width" secondItem="iGQ-bb-u34" secondAttribute="width" id="662-Fl-V0z"/>
+                                            <constraint firstItem="iGQ-bb-u34" firstAttribute="height" secondItem="Gvo-To-lfg" secondAttribute="height" id="67c-1o-aWY"/>
+                                            <constraint firstItem="Gvo-To-lfg" firstAttribute="width" secondItem="ekY-yE-71J" secondAttribute="width" multiplier="321/367" id="AEg-Ch-7bn"/>
+                                            <constraint firstItem="TjO-ee-kIe" firstAttribute="top" secondItem="iGQ-bb-u34" secondAttribute="bottom" constant="25" id="EhK-6Z-7Hq"/>
+                                            <constraint firstItem="GTU-rh-vVe" firstAttribute="width" secondItem="ekY-yE-71J" secondAttribute="width" multiplier="322/375" id="JKj-3b-UkW"/>
+                                            <constraint firstItem="iGQ-bb-u34" firstAttribute="top" secondItem="Gvo-To-lfg" secondAttribute="bottom" constant="25" id="JwD-xb-uL0"/>
+                                            <constraint firstItem="TjO-ee-kIe" firstAttribute="centerX" secondItem="iGQ-bb-u34" secondAttribute="centerX" id="JxX-qc-XB7"/>
+                                            <constraint firstItem="Iys-9p-5Hp" firstAttribute="leading" secondItem="GTU-rh-vVe" secondAttribute="leading" multiplier="3.5" id="Lzt-Wk-bkB"/>
+                                            <constraint firstItem="G9H-rr-i3j" firstAttribute="width" secondItem="TjO-ee-kIe" secondAttribute="width" id="Mpp-74-Kci"/>
+                                            <constraint firstItem="iGQ-bb-u34" firstAttribute="width" secondItem="Gvo-To-lfg" secondAttribute="width" id="XoD-2O-BPX"/>
+                                            <constraint firstItem="k2Z-wM-pfy" firstAttribute="centerX" secondItem="G9H-rr-i3j" secondAttribute="centerX" id="ZP7-eE-cyp"/>
+                                            <constraint firstItem="Iys-9p-5Hp" firstAttribute="width" secondItem="ekY-yE-71J" secondAttribute="width" multiplier="0.5" id="fpa-R9-4pI"/>
+                                            <constraint firstItem="iGQ-bb-u34" firstAttribute="centerX" secondItem="Gvo-To-lfg" secondAttribute="centerX" id="imB-B4-Vu5"/>
+                                            <constraint firstItem="TjO-ee-kIe" firstAttribute="height" secondItem="iGQ-bb-u34" secondAttribute="height" id="l9N-3w-Bo8"/>
+                                            <constraint firstItem="GTU-rh-vVe" firstAttribute="centerX" secondItem="ekY-yE-71J" secondAttribute="centerX" id="mEs-yb-IvI"/>
+                                            <constraint firstItem="Iys-9p-5Hp" firstAttribute="top" secondItem="GTU-rh-vVe" secondAttribute="bottom" constant="8" id="oPf-4r-IoU"/>
+                                            <constraint firstItem="GTU-rh-vVe" firstAttribute="top" secondItem="ekY-yE-71J" secondAttribute="top" constant="56" id="pMQ-fB-WFO"/>
+                                            <constraint firstItem="k2Z-wM-pfy" firstAttribute="width" secondItem="ekY-yE-71J" secondAttribute="width" multiplier="315/375" id="qYd-pz-VhZ"/>
+                                            <constraint firstItem="Gvo-To-lfg" firstAttribute="top" secondItem="GTU-rh-vVe" secondAttribute="bottom" constant="46" id="sPP-uS-2c7"/>
+                                            <constraint firstItem="Gvo-To-lfg" firstAttribute="centerX" secondItem="GTU-rh-vVe" secondAttribute="centerX" id="sxk-aM-dTP"/>
+                                            <constraint firstItem="G9H-rr-i3j" firstAttribute="centerX" secondItem="TjO-ee-kIe" secondAttribute="centerX" id="wgj-u4-5k3"/>
+                                            <constraint firstItem="k2Z-wM-pfy" firstAttribute="top" secondItem="G9H-rr-i3j" secondAttribute="bottom" constant="17" id="yKN-xB-S8G"/>
+                                            <constraint firstItem="Iys-9p-5Hp" firstAttribute="height" secondItem="ekY-yE-71J" secondAttribute="height" multiplier="0.0316344" id="yZ2-NR-nC2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ekY-yE-71J" firstAttribute="leading" secondItem="xAg-FT-om7" secondAttribute="leading" id="5cg-Re-NUs"/>
+                                    <constraint firstItem="ekY-yE-71J" firstAttribute="width" secondItem="xAg-FT-om7" secondAttribute="width" id="7uz-YN-D6G"/>
+                                    <constraint firstItem="ekY-yE-71J" firstAttribute="height" secondItem="xAg-FT-om7" secondAttribute="height" priority="750" id="KRh-Ny-b7Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="ekY-yE-71J" secondAttribute="bottom" constant="249" id="PhR-9Z-xSI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ekY-yE-71J" secondAttribute="trailing" id="ovb-Jm-Z04"/>
+                                    <constraint firstItem="ekY-yE-71J" firstAttribute="top" secondItem="xAg-FT-om7" secondAttribute="top" id="wVx-lb-uvj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xAg-FT-om7" firstAttribute="top" secondItem="jpf-fW-5ql" secondAttribute="top" id="EWz-Fk-N6y"/>
+                            <constraint firstItem="jpf-fW-5ql" firstAttribute="trailing" secondItem="xAg-FT-om7" secondAttribute="trailing" id="Icl-2b-NjM"/>
+                            <constraint firstItem="jpf-fW-5ql" firstAttribute="bottom" secondItem="xAg-FT-om7" secondAttribute="bottom" id="WVl-Vz-G9Z"/>
+                            <constraint firstItem="xAg-FT-om7" firstAttribute="leading" secondItem="jpf-fW-5ql" secondAttribute="leading" id="YYG-Nf-GNx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jpf-fW-5ql"/>
+                        <connections>
+                            <outlet property="contactLabel" destination="Iys-9p-5Hp" id="cpW-Je-IXx"/>
+                            <outlet property="detailTextView" destination="G9H-rr-i3j" id="oAG-8X-VYl"/>
+                            <outlet property="emailTextField" destination="iGQ-bb-u34" id="cI2-ki-aQj"/>
+                            <outlet property="mainLabel" destination="GTU-rh-vVe" id="CKg-RW-i7b"/>
+                            <outlet property="mobileNumberTextField" destination="TjO-ee-kIe" id="Y0C-sM-E3W"/>
+                            <outlet property="nameTextField" destination="Gvo-To-lfg" id="xho-0Z-bF1"/>
+                            <outlet property="sendRequestButton" destination="k2Z-wM-pfy" id="v5Q-eu-UWV"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="homeNurseView" destination="Fw8-IA-XYh" id="Pj2-pP-ewi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLg-sS-ZtB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228.98550724637684" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>

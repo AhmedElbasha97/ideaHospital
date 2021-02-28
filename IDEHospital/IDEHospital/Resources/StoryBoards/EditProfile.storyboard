@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MB7-dt-fmQ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit ProfileVC-->
+        <scene sceneID="pou-t8-dpV">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MB7-dt-fmQ" customClass="EditProfileVC" customModule="IDEHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Fc-Eg-eNh" customClass="EditProfileView" customModule="IDEHospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-Is-jno" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="90" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-yr-jSk" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="150" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cme-YO-3vy" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="210" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9C-ho-H3d" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="270" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-np-zjJ" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="330" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpF-o6-fC7" customClass="CommonTextField" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="390" width="321" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1k-QX-P9i" customClass="CommonUIButton" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="70" y="496" width="100.5" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="MB7-dt-fmQ" eventType="touchUpInside" id="2d4-zf-Qcy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyY-dC-tPh" customClass="CommonUIButton" customModule="IDEHospital" customModuleProvider="target">
+                                <rect key="frame" x="206" y="496" width="100" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="MB7-dt-fmQ" eventType="touchUpInside" id="KAD-7T-P0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x3o-Is-jno" firstAttribute="width" secondItem="4Fc-Eg-eNh" secondAttribute="width" multiplier="0.856" id="0RF-HL-xvM"/>
+                            <constraint firstItem="cme-YO-3vy" firstAttribute="width" secondItem="SEU-yr-jSk" secondAttribute="width" id="3Hf-Qp-mbb"/>
+                            <constraint firstItem="T9C-ho-H3d" firstAttribute="height" secondItem="cme-YO-3vy" secondAttribute="height" id="5Sf-s2-2pB"/>
+                            <constraint firstItem="hpF-o6-fC7" firstAttribute="height" secondItem="TuT-np-zjJ" secondAttribute="height" id="7jh-9y-53G"/>
+                            <constraint firstItem="TuT-np-zjJ" firstAttribute="width" secondItem="T9C-ho-H3d" secondAttribute="width" id="94n-CL-Psl"/>
+                            <constraint firstItem="SEU-yr-jSk" firstAttribute="top" secondItem="x3o-Is-jno" secondAttribute="bottom" constant="20" id="ANn-DK-yfj"/>
+                            <constraint firstItem="SEU-yr-jSk" firstAttribute="leading" secondItem="x3o-Is-jno" secondAttribute="leading" id="EYW-pK-WqU"/>
+                            <constraint firstItem="T9C-ho-H3d" firstAttribute="leading" secondItem="cme-YO-3vy" secondAttribute="leading" id="FQJ-7K-mwv"/>
+                            <constraint firstItem="hpF-o6-fC7" firstAttribute="leading" secondItem="TuT-np-zjJ" secondAttribute="leading" id="Gyf-Nq-FpL"/>
+                            <constraint firstItem="TuT-np-zjJ" firstAttribute="leading" secondItem="T9C-ho-H3d" secondAttribute="leading" id="PDi-d6-VRX"/>
+                            <constraint firstItem="hpF-o6-fC7" firstAttribute="top" secondItem="TuT-np-zjJ" secondAttribute="bottom" constant="20" id="RoE-Ab-Lhy"/>
+                            <constraint firstItem="x3o-Is-jno" firstAttribute="leading" secondItem="pRO-tl-EfF" secondAttribute="leading" constant="30.5" id="Rpa-aG-wkh"/>
+                            <constraint firstItem="TuT-np-zjJ" firstAttribute="top" secondItem="T9C-ho-H3d" secondAttribute="bottom" constant="20" id="SRq-Xr-z6M"/>
+                            <constraint firstItem="T9C-ho-H3d" firstAttribute="width" secondItem="cme-YO-3vy" secondAttribute="width" id="TMY-eH-mel"/>
+                            <constraint firstItem="e1k-QX-P9i" firstAttribute="height" secondItem="4Fc-Eg-eNh" secondAttribute="height" multiplier="0.0449775" id="VKm-sF-buT"/>
+                            <constraint firstItem="iyY-dC-tPh" firstAttribute="height" secondItem="e1k-QX-P9i" secondAttribute="height" id="WKX-D7-pfY"/>
+                            <constraint firstItem="SEU-yr-jSk" firstAttribute="height" secondItem="x3o-Is-jno" secondAttribute="height" id="XNA-hY-MjY"/>
+                            <constraint firstItem="x3o-Is-jno" firstAttribute="top" secondItem="pRO-tl-EfF" secondAttribute="top" constant="90" id="abD-t7-dif"/>
+                            <constraint firstItem="e1k-QX-P9i" firstAttribute="top" secondItem="hpF-o6-fC7" secondAttribute="bottom" constant="66" id="bIP-RV-hPH"/>
+                            <constraint firstItem="iyY-dC-tPh" firstAttribute="centerY" secondItem="e1k-QX-P9i" secondAttribute="centerY" id="bUO-kw-Bje"/>
+                            <constraint firstItem="e1k-QX-P9i" firstAttribute="width" secondItem="4Fc-Eg-eNh" secondAttribute="width" multiplier="0.267" id="cfj-BW-5Fy"/>
+                            <constraint firstItem="iyY-dC-tPh" firstAttribute="leading" secondItem="e1k-QX-P9i" secondAttribute="trailing" constant="35.5" id="d8W-wB-PQt"/>
+                            <constraint firstItem="T9C-ho-H3d" firstAttribute="top" secondItem="cme-YO-3vy" secondAttribute="bottom" constant="20" id="e4g-LU-pEx"/>
+                            <constraint firstItem="iyY-dC-tPh" firstAttribute="width" secondItem="e1k-QX-P9i" secondAttribute="width" id="e8N-0u-7Jw"/>
+                            <constraint firstItem="e1k-QX-P9i" firstAttribute="leading" secondItem="hpF-o6-fC7" secondAttribute="leading" multiplier="2.3" id="iLN-BL-NnZ"/>
+                            <constraint firstItem="cme-YO-3vy" firstAttribute="leading" secondItem="SEU-yr-jSk" secondAttribute="leading" id="oQW-gD-beC"/>
+                            <constraint firstItem="cme-YO-3vy" firstAttribute="top" secondItem="SEU-yr-jSk" secondAttribute="bottom" constant="20" id="pZO-IC-P2g"/>
+                            <constraint firstItem="x3o-Is-jno" firstAttribute="height" secondItem="4Fc-Eg-eNh" secondAttribute="height" multiplier="0.06" id="q0E-Ys-c4d"/>
+                            <constraint firstItem="TuT-np-zjJ" firstAttribute="height" secondItem="T9C-ho-H3d" secondAttribute="height" id="tB5-rL-CUc"/>
+                            <constraint firstItem="cme-YO-3vy" firstAttribute="height" secondItem="SEU-yr-jSk" secondAttribute="height" id="vfK-rh-Yam"/>
+                            <constraint firstItem="hpF-o6-fC7" firstAttribute="width" secondItem="TuT-np-zjJ" secondAttribute="width" id="xzi-Zb-NRL"/>
+                            <constraint firstItem="SEU-yr-jSk" firstAttribute="width" secondItem="x3o-Is-jno" secondAttribute="width" id="yMM-zM-7Hk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pRO-tl-EfF"/>
+                        <connections>
+                            <outlet property="cancelButton" destination="iyY-dC-tPh" id="VDr-Ia-Vvv"/>
+                            <outlet property="saveButton" destination="e1k-QX-P9i" id="kpn-zt-r4g"/>
+                            <outlet property="yourConfirmPasswordTextField" destination="hpF-o6-fC7" id="j0q-D8-mj7"/>
+                            <outlet property="yourEmailTextField" destination="SEU-yr-jSk" id="8Vf-PZ-ocZ"/>
+                            <outlet property="yourNameTextField" destination="x3o-Is-jno" id="qpL-FX-qGe"/>
+                            <outlet property="yourNewPasswordTextField" destination="TuT-np-zjJ" id="hnC-uJ-HcD"/>
+                            <outlet property="yourOldPasswordTextField" destination="T9C-ho-H3d" id="QWP-0u-rml"/>
+                            <outlet property="yourphoneTextField" destination="cme-YO-3vy" id="wTc-dm-rs5"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="editProvileView" destination="4Fc-Eg-eNh" id="t33-OM-rPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfo-0G-WbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="62"/>
+        </scene>
+    </scenes>
+</document>
